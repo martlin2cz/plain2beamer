@@ -9,8 +9,9 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Map.Entry;
+
 import plain2beamer.documents.BeamerDocument;
+import plain2beamer.documents.ListItem;
 
 /**
  * Třída provádějcí otevření vstupního souboru a překlad do výstupního.
@@ -155,6 +156,9 @@ public class PlainToBeamer {
             while (reader.ready()) {
                 String line = reader.readLine();
 
+                if (line == null) {
+                	break;
+                }
                 result = processLine(line, document);
                 if (result != null) {
                     break;
@@ -219,12 +223,13 @@ public class PlainToBeamer {
             return null;
         }
 
-        Entry<String, Integer> lineItem = parser.readListItem(line);
+        ListItem lineItem = parser.readListItem(line);
 
-        if (lineItem.getValue() == 0) {
+        if (lineItem.getPadding() == 0) {
+        	document.fixPadding();
             document.writeNormalLine(line);
         } else {
-            document.writeListItem(lineItem.getKey(), lineItem.getValue());
+            document.writeListItem(lineItem);
         }
 
         return null;

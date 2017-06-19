@@ -5,15 +5,44 @@
 	<groupId>cz.martlin</groupId>
 	<artifactId>plain2beamer</artifactId>
 	<version>2.0.1</version>
+	<packaging>jar</packaging>
+
 
 	<name>plain2beamer</name>
 	<description>A simple tool converting plain text file (with syntax similar to Markdown) into LaTeX beamer presentation.</description>
 
-	<packaging>jar</packaging>
+
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/junit/junit -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifest>
+							<mainClass>plain2beamer.Plain2beamerMain</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 
 </project>

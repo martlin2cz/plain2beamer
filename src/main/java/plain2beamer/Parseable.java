@@ -1,6 +1,6 @@
 package plain2beamer;
 
-import java.util.Map.Entry;
+import plain2beamer.documents.ListItem;
 
 /**
  * Předepisuje způsob, jakým, bude načítat požadované elementy ze vstupního souboru.
@@ -70,7 +70,7 @@ public interface Parseable {
      * @param line
      * @return 
      */
-    public abstract Entry<String, Integer> readListItem(String line);
+    public abstract ListItem readListItem(String line);
 
     /**
      * Vypíše (na stdout) informace o tomto formátu vstupního souboru.
