@@ -10,7 +10,7 @@ public class Plain2beamerMain {
 
     public static final String APP_NAME = "plain2beamer";
     public static final String AUTHOR = "m@rtlin";
-    public static final String VERSION = "2.0.1";
+    public static final String VERSION = "2.1.1";
     public static final String DATE = "19.6.2017";
 
     public static void printVersion() {

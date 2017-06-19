@@ -158,8 +158,8 @@ public class MartlinsParser implements Parseable {
 		System.out.println("\t\t[$\\Rightarrow$] položka 2. seznamu zanoření 2 (šipka)");
 		System.out.println();
 		System.out.println("% Slajd je ukončen automaticky dalším slajdem, sekcí, podsekcí - nebo koncem souboru.");
-		System.out.println("#Další slajd");
-		System.out.println("Obsah slajdu, třeba matematika: $c^2 = a^2 + b^2$");
+		System.out.println("#Další slajd[fragile]");
+		System.out.println("Obsah slajdu, třeba matematika: $c^2 = a^2 + b^2$, volitelně lze specifikovat příznak fragile");
 		System.out.println();
 		System.out.println("% Ani celý soubor není třeba nijak ukončovat");
 

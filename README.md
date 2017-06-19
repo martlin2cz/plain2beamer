@@ -50,3 +50,9 @@ or
     This is headerless slide and with no bullets. Just simply a plain \LaTeX text inside of the slide.
 
 And that's all folks. It's just simple. I know.
+
+## TODO
+
+ - translate to english (originally in chzech)
+ - refactor, make it more data-oriented instead of stream-oriented
+ - write tests
