@@ -1,0 +1,100 @@
+%% Prezentace: About plain2beamer
+%% m@rtlin, m@rtlin's
+%% 19th June 2017, 1.2
+%%
+%% Vygenerováno programem plain2beamer 2.0.1
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass{beamer}
+\usepackage[czech]{babel}
+\usepackage[utf8x]{inputenc}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{About plain2beamer}
+\author{m@rtlin}
+\date{19th June 2017}
+\institute{m@rtlin's}
+\def\version{1.2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}	%% Slajd 1
+	\titlepage
+\end{frame}
+
+\section{Tool plain2beamer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}	%% Slajd 2 - Obsah
+\frametitle{Obsah}
+	\tableofcontents[]
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}	%% Slajd 3 - About this program
+\frametitle{About this program}
+\begin{itemize}
+	\item its input is plain file (see next slide for sample):
+	\item outputs \LaTeX beamer file
+	\begin{itemize}
+		\item[$\Rightarrow$] two commands generates presentation in PDF
+	\end{itemize}
+\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]	%% Slajd 4 - Example of heading
+\frametitle{Example of heading}
+\begin{verbatim}
+  title=My presentation
+  author=me
+  date=now
+  version=1.0
+  institute=My company
+ 
+  % latex headings, definitions, ...
+  \usepackage{amsmath}
+  
+  \mode<presentation> {
+    \usetheme{Pittsburgh}
+    \usecolortheme{sea}
+  }
+\end{verbatim}
+ 
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]	%% Slajd 5 - Example of content
+\frametitle{Example of content}
+\begin{verbatim}
+  #Slide header
+    - first bullet
+    - another one
+      - subitem
+  
+  Normal text goes here.
+  
+  #
+  This is headerless slide.
+  $\rightarrow$ with something more ...
+  
+  #Last slide
+  - no file ending needed
+\end{verbatim}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}	%% Slajd 6 - Features
+\frametitle{Features}
+\begin{itemize}
+	\item accepts following:
+	\begin{itemize}
+		\item[1.] sections and subsections
+		\item[2.] slides with title or without
+		\item[3.] unordered lists with subitems
+		\item[4.] custom bullets (in this case just simply numbers)
+		\item[5.] everything else is considered as plain \LaTeX code
+	\end{itemize}
+\end{itemize}
+\end{frame}
+
+\end{document}

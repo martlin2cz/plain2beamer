@@ -1,0 +1,57 @@
+title=About plain2beamer
+author=m@rtlin
+date=19th June 2017
+version=1.2
+institute=m@rtlin's
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+##Tool plain2beamer
+
+#About this program
+	- its input is plain file (see next slide for sample):
+	- outputs \LaTeX beamer file
+		$\Rightarrow$ two commands generates presentation in PDF
+
+#Example of heading[fragile]
+\begin{verbatim}
+  title=My presentation
+  author=me
+  date=now
+  version=1.0
+  institute=My company
+ 
+  % latex headings, definitions, ...
+  \usepackage{amsmath}
+  
+  \mode<presentation> {
+    \usetheme{Pittsburgh}
+    \usecolortheme{sea}
+  }
+\end{verbatim}
+ 
+#Example of content[fragile]
+\begin{verbatim}
+  #Slide header
+    - first bullet
+    - another one
+      - subitem
+  
+  Normal text goes here.
+  
+  #
+  This is headerless slide.
+  $\rightarrow$ with something more ...
+  
+  #Last slide
+  - no file ending needed
+\end{verbatim}
+
+#Features
+	- accepts following:
+		1. sections and subsections
+		2. slides with title or without
+		3. unordered lists with subitems
+		4. custom bullets (in this case just simply numbers)
+		5. everything else is considered as plain \LaTeX code
+
