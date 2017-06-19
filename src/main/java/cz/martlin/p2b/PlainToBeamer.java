@@ -1,4 +1,4 @@
-package plain2beamer;
+package cz.martlin.p2b;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -10,8 +10,8 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import plain2beamer.documents.BeamerDocument;
-import plain2beamer.documents.ListItem;
+import cz.martlin.p2b.documents.BeamerDocument;
+import cz.martlin.p2b.documents.ListItem;
 
 /**
  * Třída provádějcí otevření vstupního souboru a překlad do výstupního.

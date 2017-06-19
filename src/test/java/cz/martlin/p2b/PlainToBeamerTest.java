@@ -1,4 +1,4 @@
-package plain2beamer;
+package cz.martlin.p2b;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -6,6 +6,10 @@ import java.io.StringReader;
 import java.io.StringWriter;
 
 import org.junit.Test;
+
+import cz.martlin.p2b.Parseable;
+import cz.martlin.p2b.Parser;
+import cz.martlin.p2b.PlainToBeamer;
 
 public class PlainToBeamerTest {
 

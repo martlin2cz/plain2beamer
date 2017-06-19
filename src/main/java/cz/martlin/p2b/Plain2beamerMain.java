@@ -1,4 +1,4 @@
-package plain2beamer;
+package cz.martlin.p2b;
 
 import java.io.File;
 

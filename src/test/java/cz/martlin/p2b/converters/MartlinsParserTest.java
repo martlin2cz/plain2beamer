@@ -1,10 +1,11 @@
-package plain2beamer.converters;
+package cz.martlin.p2b.converters;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import plain2beamer.documents.ListItem;
+import cz.martlin.p2b.converters.MartlinsParser;
+import cz.martlin.p2b.documents.ListItem;
 
 public class MartlinsParserTest {
 	private final MartlinsParser parser = new MartlinsParser();

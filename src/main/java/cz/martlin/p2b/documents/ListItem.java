@@ -1,4 +1,4 @@
-package plain2beamer.documents;
+package cz.martlin.p2b.documents;
 
 public class ListItem {
 	private final int padding;

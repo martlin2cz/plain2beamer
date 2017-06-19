@@ -1,8 +1,9 @@
-package plain2beamer.documents;
+package cz.martlin.p2b.documents;
 
 import java.io.IOException;
 import java.io.Writer;
-import plain2beamer.Plain2beamerMain;
+
+import cz.martlin.p2b.Plain2beamerMain;
 
 /**
  * Třída preprezentující sestavovaný LaTeXový soubor.

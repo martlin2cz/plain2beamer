@@ -1,6 +1,6 @@
-package plain2beamer;
+package cz.martlin.p2b;
 
-import plain2beamer.documents.ListItem;
+import cz.martlin.p2b.documents.ListItem;
 
 /**
  * Předepisuje způsob, jakým, bude načítat požadované elementy ze vstupního souboru.

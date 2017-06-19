@@ -1,8 +1,8 @@
-package plain2beamer.converters;
+package cz.martlin.p2b.converters;
 
-import plain2beamer.Parseable;
-import plain2beamer.PlainToBeamer;
-import plain2beamer.documents.ListItem;
+import cz.martlin.p2b.Parseable;
+import cz.martlin.p2b.PlainToBeamer;
+import cz.martlin.p2b.documents.ListItem;
 
 /**
  * m@rtlinův parser.
